@@ -2,6 +2,6 @@ Avanzar con los siguientes puntos:
 - Limpieza
 - Solución al manejo de la columna Crew
 - Trabajo poblar Base de datos
-  - Usando Scripts (generados desde Scala)
-  - Sentencias INSERT INTO a través de librería
-  - Documentar proceso en archivo README
+  - Opción 1: Usando Scripts SQL (generados desde Scala)
+  - Opción 2: Sentencias INSERT INTO a través de librería (Scala)
+- Documentar proceso en archivo README
