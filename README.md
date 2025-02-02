@@ -332,3 +332,31 @@ En esta parte de eliminar los duplicados es para que al momento de insertar los 
 statement.setXXX(index, value) => Asigna valores a los parámetros (?) y executeUpdate() ejecuta la inserción en la base de datos.
 
 Al final se cierra el csv e imprimimos un mensaje indicando que los datos se insertaron correctamente.
+
+# Estadisticas:
+1. Movies:
+* 3393 peliculas, este es el total de peliculas unicas, sin repetirse 
+2. Genres:
+* 20 generos, ese es el total de generos unicos, sin repetirse
+3. Popularity:
+* Total del índice de la popularidad, sumando el índice de popularidad de todas las peliculas es: 12922.423507999989
+* Promedio del índice de popularidad, dividiendo el total del índice de la popularidad para la cantidad de peliculas es: 3.722968455200227
+* La pelicula con el índice de popularidad más alta tiene: 123.167259 
+3. Votes:
+* Total de la cantidad de votantes, sumando los votantes de todas las películas es de: 801206 votantes
+* Promedio de votantes, dividiendo el total de los votantes por la cantidad de peliculas es de: 230 votantes
+* La película con la cantidad de votantes más alta es de: 14075 votantes
+* La película con la cantidad de votantes más baja es de: 0 votantes
+4. Score:
+* Total de la puntuación. sumando las puntuaciones de todas las películas es de: 19711.1 calificaciones
+* Promedio de puntuación, dividiendo el total de las puntuaciones por el total de las películas es de: 5.7 calificaciones
+* La película con mayor puntuación es de: 10.0
+* Cantida de total de votantes, sumando los votantes de todas las pel[iculas: 801206 
+* Promedio de votantes: 230
+* La película con la cantidad de votantes más alta es de: 14075 votantes
+5. Revenue:
+* Total de ingresos generados, sumando los ingresos de todas las películas es: $78975396914
+* Promedio de ingresos generados, dividiendo el total de ingresos por la cantidad total de películas registradas: $78975396914
+* Película con la mayor cantidad de ingresos registrada: $1118888979
+
+![image](https://github.com/user-attachments/assets/18c04868-90ce-42d6-b4ad-ef183366fa70)
