@@ -1,4 +1,123 @@
 # ProyectoIntegrador_PFR
+Repositorio del proyecto integrador - Programación funcional y reactica
+### Tabla de datos
+| Nombre columna | Tipo de Dato | Proposito | Observacones |
+|----------------|--------------|-----------|--------------|
+| adult | boolean | Comprueba si la pelicula es para mayores de edad | No deberia ser null |
+| belongs_to_collection | String | Indica si la pelicula pertenece a una coleccion especifica | Opcional algunos valores pueden ser nulos |
+| budget | Int | Indica el costo de produccion de la pelicula | Opcional algunos valores pueden ser nulos |
+| genres | String | Indica la lista de generos de la pelicula | Necesaria para brindar informacion adicional de la pelicula |
+| homepage | String | Contiene el URL del sitio ofcial de la pelicula | Necesaria para brindar informacion adicional de la pelicula |
+| id | Int | Identificador unico asignado a cada pelicula | No se repite en todo el dataset |
+| imdb_id | String | Identificador unico asignado por IMDB a cada pelicula | No se repite en todo el dataset |
+| original_lenguage | String | Indica el idioma original de la pelicula | No deberia ser null |
+| original_title | String | Indica el titulo de la pelicula en su idioma original | No deberia ser null |
+| overview | String | Contiene una breve descripción o sinopsis de la trama de la película | Necesaria para brindar informacion adicional de la pelicula |
+| popularity | Double | Mide la popularidad de la pelicula | Opcional algunos valores pueden ser nulos |
+| poster_path | String | Contiene la URL de una imagen del poster de la pelicula | Necesaria para brindar informacion adicional de la pelicula |
+| production_companies | String | Contiene un JSON con la lista de las empresas de producción involucradas en la creación de la película | Necesaria para brindar informacion adicional de la pelicula |
+| production_countries | String | Contiene un JSON que lista los países en los cuales se grabó la película | Necesaria para brindar informacion adicional de la pelicula |
+|	release_date | String | Contiene la fecha en que la película fue lanzada por primera vez en los cines | Formato: YYYY-MM-DD |
+|	revenue | Long | Contiene los ingresos totales generados por la pelicula | No deberia ser null |
+| runtime | Int | Duracion de la pelicula | Necesaria para brindar informacion adicional de la pelicula |
+| spoken_languages | String | Representa los idiomas en los que se habla durante la película | Necesaria para brindar informacion adicional de la pelicula |
+| status | String | Indica el estado de la pelicula en producion, completa, etc... | Opcional algunos valores pueden ser nulos |
+| tagline | String | Frase breve para promocionar la pelicula | Opcional algunos valores pueden ser nulos |
+| title | String | Contiene el titulo oficial de la pelicula | No deberia ser null |
+| video | Boolean | Indica si la pelicula tiene una version en video | No deberia ser null |
+| vote_average | Double | Indica el promedio de la calificación que los usuarios han dado a la película | Opcional algunos valores pueden ser nulos |
+| vote_count | Int | Indica el numero total de votos o calificaciones que ha recibido la película | Opcional algunos valores pueden ser nulos |
+| keywords | String | Contiene un JSON con una lista de palabras clave asociadas a la película | No deberia ser null |
+| cast | String | Contiene los datos de los actores y actrices que participaron en la película | No deberia ser null |
+| crew | String | Contiene información sobre el equipo de producción de la película | No deberia ser null |
+| ratings | String | Contiene las calificaciones de la película de diferentes fuentes | Opcional algunos valores pueden ser nulos |
+
+### Descripción de Columnas
+•	adult (Boolean):
+Esta columna indica si la película es para mayores de edad. Se usa para determinar si el contenido tiene restricciones de edad debido a su violencia, lenguaje, o contenido sexual explícito.
+
+•	belongs_to_collection (String):
+Esta columna indica si la película pertenece a una colección específica, como una saga de películas o una serie de franquicias. El valor es una cadena de texto que contiene el nombre de la colección o el identificador único de la misma.
+
+•	budget (Int):
+Esta columna indica el costo de producir la película, incluyendo el pago de los actores, el equipo técnico, efectos especiales, marketing, etc. El valor es un número entero que representa el presupuesto total de la película en dólares.
+
+•	genres (Lo manejaremos como String pero es JSON):
+Esta columna contiene una lista de géneros, categorías o temas principales de la película, como acción, drama, comedia, etc. El valor está representado como una cadena de texto que contiene un JSON con los géneros de la película.
+
+•	homepage (String):
+Esta columna contiene la URL del sitio web oficial de la película. Generalmente es utilizada para obtener información adicional, como trailers, sinopsis, y otros datos promocionales.
+
+•	id (Int):
+Esta columna representa un identificador único asignado a cada película dentro del dataset. Sirve para referenciar de manera unívoca a cada película en la base de datos.
+
+•	imdb_id (String):
+Esta columna representa el identificador único asignado por IMDb (Internet Movie Database) a cada película. Este ID permite enlazar fácilmente cada película con su página en IMDb.
+
+•	original_language (String):
+Esta columna indica el idioma original en el que se realizó y publicó la película, por ejemplo, inglés, español, francés, etc.
+
+•	original_title (String):
+Esta columna contiene el título de la película en su idioma original, tal como fue lanzada al público en el país de origen.
+
+•	overview (String):
+Esta columna contiene una breve descripción o sinopsis de la trama de la película, con el propósito de dar al lector una visión general de la historia que se presenta.
+
+•	popularity (Double):
+Esta columna es un valor numérico que mide la popularidad de la película. Se calcula basándose en varios factores como vistas, menciones en redes sociales, y más.
+
+•	poster_path (String):
+Esta columna contiene la URL o el camino relativo hacia la imagen del póster de la película, que es utilizada en diversos medios promocionales.
+
+•	production_companies (Lo manejaremos como String pero es JSON):
+Esta columna contiene un JSON con la lista de las empresas de producción involucradas en la creación de la película. Estas compañías financian, producen y distribuyen la película.
+
+•	production_countries (Lo manejaremos como String pero es JSON):
+Esta columna contiene un JSON que lista los países en los cuales se grabó la película. Cada película debe tener, como mínimo, un país de producción.
+
+•	release_date (String):
+Esta columna es de tipo fecha (string), y contiene la fecha en que la película fue lanzada por primera vez en los cines. Generalmente se usa el formato YYYY-MM-DD.
+
+•	revenue (Long):
+Esta columna representa los ingresos totales generados por la película a través de taquilla, ventas de DVD/Blu-ray, y otros ingresos comerciales. El valor es un número largo (long) que refleja las ganancias totales.
+
+•	runtime (Int):
+Esta columna indica la duración total de la película, medida en minutos. Representa el tiempo en pantalla de la película desde el inicio hasta el final.
+
+•	spoken_languages (Lo manejaremos como String pero es JSON):
+Esta columna es de tipo JSON y representa los idiomas en los que se habla durante la película. Cada idioma es listado en formato JSON, por ejemplo, español, inglés, francés, etc.
+
+•	status (String):
+Esta columna indica el estado de la película, como si está en producción, completa, anunciada, cancelada, etc. Proporciona información sobre la etapa en la que se encuentra la película.
+
+•	tagline (String):
+Esta columna contiene una frase breve que generalmente se utiliza para promocionar la película, como un eslogan o lema que resalta su temática o estilo.
+
+•	title (String):
+Esta columna contiene el título oficial con el cual la película es presentada al público en general. Es el nombre con el que la película será reconocida en medios.
+
+•	video (Boolean):
+Esta columna es de tipo booleano y se usa para indicar si la película tiene una versión en video, como un trailer o un lanzamiento en formato de video.
+
+•	vote_average (Double):
+Esta columna representa el promedio de la calificación que los usuarios han dado a la película, en plataformas como IMDb, Rotten Tomatoes o Metacritic.
+
+•	vote_count (Int):
+Esta columna muestra el número total de votos o calificaciones que ha recibido la película. Es un indicador de la popularidad y aceptación de la película entre el público.
+
+•	keywords (Lo manejaremos como String pero es JSON):
+Esta columna contiene un JSON con una lista de palabras clave asociadas a la película. Estas palabras clave son términos que representan los temas, géneros, conceptos o elementos importantes relacionados con la película.
+
+•	cast (Lo manejaremos como String pero es JSON):
+Esta columna es de tipo JSON y contiene los datos de los actores y actrices que participaron en la película. El JSON incluye nombres y roles de los miembros del reparto.
+
+•	crew (Lo manejaremos como String pero es JSON):
+Esta columna es de tipo JSON y contiene información sobre el equipo de producción de la película, como el director, productor, guionistas, diseñadores de producción, entre otros.
+
+•	ratings (String, JSON):
+Esta columna contiene las calificaciones de la película de diferentes fuentes. El valor está representado como una cadena de texto que contiene un JSON con las calificaciones de IMDb, Rotten Tomatoes, Metacritic y otras plataformas relevantes.
+
+# ProyectoIntegrador_PFR
 Para la limpieza de los datos se usaron diferentes fromas, por ejemplo en mi caso, usé una carpeta llamada Utils en la cual tengo el código necesario para limpiar los datos:
 
 ![image](https://github.com/user-attachments/assets/2bc60660-099a-4272-a911-435a0e29c30a)
@@ -360,3 +479,5 @@ Al final se cierra el csv e imprimimos un mensaje indicando que los datos se ins
 * Película con la mayor cantidad de ingresos registrada: $1118888979
 
 ![image](https://github.com/user-attachments/assets/18c04868-90ce-42d6-b4ad-ef183366fa70)
+
+
